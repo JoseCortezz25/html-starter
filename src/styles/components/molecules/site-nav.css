@@ -1,0 +1,9 @@
+@layer components {
+  .site-nav {
+    @apply hidden items-center gap-8 md:flex;
+  }
+
+  .site-nav__link {
+    @apply text-sm font-medium text-ink-soft transition-colors duration-200 hover:text-ink;
+  }
+}

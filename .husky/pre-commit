@@ -1,0 +1,2 @@
+node .claude/hooks/designer-git-check.mjs pre-commit
+pnpm exec lint-staged

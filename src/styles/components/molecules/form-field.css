@@ -1,0 +1,17 @@
+@layer components {
+  .form-field {
+    @apply flex flex-col gap-2;
+  }
+
+  .form-field__label {
+    @apply text-sm font-semibold text-ink;
+  }
+
+  .form-field__hint {
+    @apply text-xs text-ink-soft;
+  }
+
+  .form-field__error {
+    @apply min-h-5 text-sm font-medium text-danger;
+  }
+}

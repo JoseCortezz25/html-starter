@@ -1,0 +1,17 @@
+@layer components {
+  .site-footer {
+    @apply bg-ink text-paper;
+  }
+
+  .site-footer__inner {
+    @apply mx-auto flex max-w-6xl flex-col gap-4 px-6 py-10 text-sm md:flex-row md:items-center md:justify-between;
+  }
+
+  .site-footer__brand {
+    @apply font-display text-lg font-semibold;
+  }
+
+  .site-footer__note {
+    @apply text-paper/60;
+  }
+}

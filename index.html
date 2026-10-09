@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="html-starter example landing: a calm studio for fast, testable landing page prototypes."
+    />
+    <title>Northwind Studio — Landing prototype</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..700&family=Manrope:wght@400..800&display=swap"
+    />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <header class="site-header" data-component="organism/site-header">
+      <div class="site-header__inner">
+        <a class="site-header__brand" href="/">
+          Northwind<span class="site-header__brand-mark">.</span>
+        </a>
+        <nav
+          class="site-nav"
+          data-component="molecule/site-nav"
+          aria-label="Primary"
+        >
+          <a class="site-nav__link" href="#top">Studio</a>
+          <a class="site-nav__link" href="#contact">Contact</a>
+        </nav>
+        <a
+          class="button button--ghost"
+          data-component="atom/button"
+          href="#contact"
+        >
+          Book a call
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section
+        class="hero"
+        id="top"
+        data-component="organism/hero"
+        aria-labelledby="hero-title"
+      >
+        <div class="hero__inner">
+          <div class="hero__content">
+            <p class="hero__eyebrow" data-hero-item>
+              Design &amp; build studio
+            </p>
+            <h1 class="hero__title" id="hero-title" data-hero-item>
+              Landing pages that ship
+              <span class="hero__title-accent">this week</span>.
+            </h1>
+            <p class="hero__lead" data-hero-item>
+              We prototype in plain HTML, validate with real users, and hand off
+              code that migrates straight into production.
+            </p>
+            <div class="hero__actions" data-hero-item>
+              <a
+                class="button button--primary"
+                data-component="atom/button"
+                href="#contact"
+              >
+                Start a project
+              </a>
+            </div>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <span class="hero__shape hero__shape--sun" data-hero-shape></span>
+            <span class="hero__shape hero__shape--moss" data-hero-shape></span>
+            <span class="hero__shape hero__shape--ring" data-hero-shape></span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="contact-form"
+        id="contact"
+        data-component="organism/contact-form"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-form__inner">
+          <div class="contact-form__intro" data-reveal-item>
+            <h2 class="contact-form__title" id="contact-title">
+              Tell us about your launch
+            </h2>
+            <p class="contact-form__lead">
+              Share a few details and we will reply within one business day with
+              a proposed plan.
+            </p>
+          </div>
+
+          <form
+            class="contact-form__form"
+            data-contact-form
+            data-reveal-item
+            novalidate
+          >
+            <div class="contact-form__row">
+              <div class="form-field" data-component="molecule/form-field">
+                <label class="form-field__label" for="contact-name"
+                  >Full name</label
+                >
+                <input
+                  class="text-input"
+                  data-component="atom/text-input"
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  aria-describedby="contact-name-error"
+                />
+                <div
+                  class="form-field__error"
+                  id="contact-name-error"
+                  data-field-error="name"
+                  aria-live="polite"
+                ></div>
+              </div>
+
+              <div class="form-field" data-component="molecule/form-field">
+                <label class="form-field__label" for="contact-email"
+                  >Work email</label
+                >
+                <input
+                  class="text-input"
+                  data-component="atom/text-input"
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  aria-describedby="contact-email-error"
+                />
+                <div
+                  class="form-field__error"
+                  id="contact-email-error"
+                  data-field-error="email"
+                  aria-live="polite"
+                ></div>
+              </div>
+            </div>
+
+            <div class="form-field" data-component="molecule/form-field">
+              <label class="form-field__label" for="contact-message"
+                >Project details</label
+              >
+              <p class="form-field__hint" id="contact-message-hint">
+                Goals, timeline and any links that help us understand the brief.
+              </p>
+              <textarea
+                class="text-input text-input--multiline"
+                data-component="atom/text-input"
+                id="contact-message"
+                name="message"
+                rows="5"
+                aria-describedby="contact-message-hint contact-message-error"
+              ></textarea>
+              <div
+                class="form-field__error"
+                id="contact-message-error"
+                data-field-error="message"
+                aria-live="polite"
+              ></div>
+            </div>
+
+            <button
+              class="button button--primary button--block"
+              data-component="atom/button"
+              data-form-submit
+              type="submit"
+            >
+              Send message
+            </button>
+            <p class="contact-form__status" data-form-status role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-component="organism/site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__brand">Northwind.</p>
+        <p class="site-footer__note">
+          Prototype built with html-starter. Not a real company.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

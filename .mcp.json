@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "chrome-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["chrome-devtools-mcp@latest"],
+      "env": {}
+    },
+    "figma-desktop": {
+      "url": "http://127.0.0.1:3845/mcp"
+    }
+  }
+}

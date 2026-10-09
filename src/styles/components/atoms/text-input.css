@@ -1,0 +1,13 @@
+@layer components {
+  .text-input {
+    @apply w-full rounded-xl border border-ink/15 bg-paper px-4 py-3 text-base text-ink transition-colors duration-200 placeholder:text-ink-soft/60 hover:border-ink/40 focus:border-accent focus:outline-none;
+  }
+
+  .text-input--multiline {
+    @apply min-h-36 resize-y;
+  }
+
+  .text-input--invalid {
+    @apply border-danger focus:border-danger;
+  }
+}

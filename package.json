@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Lightweight HTML + Tailwind v4 + GSAP scaffold for landing page prototypes that migrate cleanly to the Next.js harness.",
+  "description": "Lightweight HTML + Tailwind v4 + GSAP scaffold for landing page prototypes that migrate cleanly to a Next.js project.",
   "engines": {
     "node": ">=24"
   },

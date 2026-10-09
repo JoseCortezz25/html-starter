@@ -1,6 +1,6 @@
 # html-starter
 
-Lightweight scaffold for simple, temporary landing pages. The UX/UI team builds prototypes in plain HTML; the Front team migrates them to the Next.js harness (`../template-starter-nextjs`) with minimal friction.
+Lightweight scaffold for simple, temporary landing pages. The UX/UI team builds prototypes in plain HTML; the Front team migrates them to a Next.js project with minimal friction.
 
 ## Stack
 

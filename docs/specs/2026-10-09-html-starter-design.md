@@ -5,7 +5,7 @@ Status: Approved
 
 ## Purpose
 
-Lightweight scaffold for simple, temporary landing pages. Bridges the UX/UI team and the Front team: prototypes are built in plain HTML and later migrated to the Next.js harness (`../template-starter-nextjs`) with minimal friction.
+Lightweight scaffold for simple, temporary landing pages. Bridges the UX/UI team and the Front team: prototypes are built in plain HTML and later migrated to a Next.js project with minimal friction.
 
 ## Stack
 
@@ -53,7 +53,7 @@ Additional pages are registered in `vite.config.ts` (`build.rollupOptions.input`
 
 ## Migration Contract (MIGRATION.md)
 
-| html-starter | Next harness |
+| html-starter | Next.js |
 |---|---|
 | `data-component="organism/hero"` | `src/domains/<domain>/components/organisms/hero.tsx` |
 | `src/styles/components/<level>/<name>.css` | same path in Next `src/styles/components/` (1:1) |

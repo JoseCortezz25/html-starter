@@ -4,7 +4,7 @@ Guidance for Claude Code in this repository.
 
 ## Project Overview
 
-`html-starter` is a lightweight scaffold for simple, temporary landing pages. The UX/UI team builds prototypes in plain HTML; the Front team later migrates them to the Next.js harness (`../template-starter-nextjs`). Every convention here exists to make that migration mechanical — see `MIGRATION.md`.
+`html-starter` is a lightweight scaffold for simple, temporary landing pages. The UX/UI team builds prototypes in plain HTML; the Front team later migrates them to a Next.js project. Every convention here exists to make that migration mechanical — see `MIGRATION.md`.
 
 **Tech Stack**: Vite, TypeScript (strict), Tailwind CSS v4 (`@tailwindcss/vite`, BEM + `@apply`), GSAP + ScrollTrigger, Just-validate, pnpm, Node >= 24.
 

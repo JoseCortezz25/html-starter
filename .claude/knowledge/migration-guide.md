@@ -4,7 +4,7 @@ Source of truth for humans: `MIGRATION.md` at the project root (full step-by-ste
 
 ## Contract
 
-| html-starter                                  | Next harness (`../template-starter-nextjs`)           |
+| html-starter                                  | Next.js                                               |
 | --------------------------------------------- | ----------------------------------------------------- |
 | `data-component="<level>/<name>"`             | `src/domains/<domain>/components/<level>s/<name>.tsx` |
 | `src/styles/components/<level>/<name>.css`    | same path in Next `src/styles/components/` (1:1)      |

@@ -1,12 +1,12 @@
-# Migration Guide: html-starter → Next.js harness
+# Migration Guide: html-starter → Next.js
 
-Prototypes built here are migrated to the Next.js harness (`../template-starter-nextjs`): Next.js App Router, React, Tailwind v4, Screaming Architecture (`src/domains/<domain>/`) + Atomic Design, React Hook Form + Zod.
+Prototypes built here are migrated to a Next.js project: Next.js App Router, React, Tailwind v4, Screaming Architecture (`src/domains/<domain>/`) + Atomic Design, React Hook Form + Zod.
 
 The conventions in this starter exist so that migration is mostly **moving files and renaming**, not redesigning.
 
 ## Mapping Contract
 
-| html-starter                                           | Next harness                                                                          |
+| html-starter                                           | Next.js                                                                               |
 | ------------------------------------------------------ | ------------------------------------------------------------------------------------- |
 | `data-component="organism/hero"`                       | `src/domains/<domain>/components/organisms/hero.tsx`                                  |
 | `data-component="atom/button"` (shared across domains) | `src/components/atoms/button.tsx`                                                     |
@@ -166,7 +166,7 @@ Rule mapping:
 | `Rules.CustomRegexp`                  | `.regex(pattern, msg)`          |
 | custom `validator`                    | `.refine(fn, msg)`              |
 
-Then, in the Next harness:
+Then, in the Next.js project:
 
 1. Move `validation-messages.ts` to `src/domains/marketing/validation-messages.ts` unchanged.
 2. Create `src/domains/marketing/hooks/use-contact-form-submit.ts` with `useForm<ContactFormInput>({ resolver: zodResolver(contactFormSchema) })`; the `onSuccess` body becomes the submit handler (Server Action call instead of the simulated request).
